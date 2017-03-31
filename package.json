@@ -4,7 +4,9 @@
   "description": "Randomize files by numbering them before their names.",
   "main": "src/randomize.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish" : "",
+    "start" : "node src/randomize.js"
   },
   "repository": {
     "type": "git",

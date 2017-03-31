@@ -11,8 +11,6 @@ parseArgs(process.argv);
 let path = (parameters.p || parameters.path);
 let format = (parameters.f || parameters.format);
 
-console.log(parameters);
-
 let limits = getLimit(parameters.n);
 
 if(!process.argv.includes("--help") && !process.argv.includes("-h") ){
