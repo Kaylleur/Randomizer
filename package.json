@@ -1,0 +1,24 @@
+{
+  "name": "randomizer",
+  "version": "1.0.3",
+  "description": "Randomize files by numbering them before their names.",
+  "main": "src/randomize.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaylleur/Randomizer.git"
+  },
+  "keywords": [
+    "random",
+    "randomizer",
+    "files"
+  ],
+  "author": "Kaylleur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaylleur/Randomizer/issues"
+  },
+  "homepage": "https://github.com/Kaylleur/Randomizer#readme"
+}
