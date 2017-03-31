@@ -1,5 +1,5 @@
 {
-  "name": "randomizer",
+  "name": "files-randomizer",
   "version": "1.0.3",
   "description": "Randomize files by numbering them before their names.",
   "main": "src/randomize.js",
@@ -13,7 +13,8 @@
   "keywords": [
     "random",
     "randomizer",
-    "files"
+    "files",
+    "files-randomizer"
   ],
   "author": "Kaylleur",
   "license": "ISC",
