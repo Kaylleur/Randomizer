@@ -1,20 +1,26 @@
 var fs = require('fs');
 var max = 99999;
 var min = 10000;
+var format = "mp3";
+var folder = "./";
 
-
-fs.readdir("./", function(err,files){
+fs.readdir(folder, function(err,files){
     for (var i = 0; i < files.length; i++) {
-        var file = files[i];
-        var oldName = file;
-        if(err) console.error(err);
-        if(file.match(/^.*\.mp3$/)){
-            random = Math.floor(Math.random()*(max-min+1)+min);
-            if(file.match(/^[0-9]{5}_(.*).mp3$/)){
-                file = file.substr(6);
+        var filename = files[i];
+        var oldFilename = filename;
+        var random = Math.floor(Math.random() * (max - min + 1) + min);
+
+        if(err) {
+            console.error(err);
+            return;
+        }
+        var reg = new RegExp("^.*\\." + format + "$");
+        if(filename.match(reg)){
+            if(filename.match(/^[0-9]{5}_(.*).mp3$/)){
+                filename = filename.substr(6);
             }
-            file = random + "_" + file;
-            fs.renameSync("./" + oldName,"./" + file);
+            filename = random + "_" + filename;
+            fs.renameSync(folder + oldFilename,folder + filename);
         }
 	}
 });
